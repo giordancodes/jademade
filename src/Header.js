@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Logo from './asterisk.svg';
+import Logo from './handpuppet.svg';
 
 class Header extends Component {
   render() {

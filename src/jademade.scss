@@ -1,11 +1,34 @@
 $darkest: rgba(11, 19, 43, 1);
 $darker: rgba(28, 37, 65, 1);
-$dark: rgba(58, 80, 107, 1);
-$light: rgba(91, 192, 190, 1);
+$dark: rgb(58, 80, 107);
+$light: rgb(91, 192, 190);
 $lightest: rgba(111, 255, 233, 1);
+$orange: #FF4242;
+$yellow: #FFCB11;
+$writ: 'Shadows Into Light', cursive;
+
 
 body {
-  background-color: $light;
+  background-color: $dark;
+  font-family: 'Lato', sans-serif;
+  color: $darkest;
+}
+
+h1 {
+  color: $lightest;
+  font-size: 4em;
+  padding: 30px 0;
+  font-weight: 100;
+  margin: 0;
+  font-family: $writ;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: $yellow;
+  margin-top: 0;
+  font-weight: 300;
 }
 
 a {
@@ -14,7 +37,7 @@ a {
   text-decoration: none;
   &:hover,
   &:focus {
-    color: $light;
+    color: $orange;
   }
 }
 
@@ -35,22 +58,32 @@ nav {
     vertical-align: text-bottom;
     li {
       display: inline-block;
-      padding: 5px;
+      padding: 5px 10px;
+      position: relative;
     }
   }
   .img-wrap {
     display: inline-block;
-    padding: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
     img {
-      animation: logo-spin infinite 22s linear;
-      height: 80px;
+      animation: logo-spin infinite 5s ease-in-out;
+      height: 60px;
       max-width: 100%;
     }
   }
-  border-bottom: solid 1px $darkest;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 95%;
+  
 }
 
 @keyframes logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  0% { transform: rotate(-20deg); }
+  50% { transform: rotate(30deg); }
+  100% { transform: rotate(-20deg); }
 }
