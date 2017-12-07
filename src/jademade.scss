@@ -4,7 +4,53 @@ $dark: rgba(58, 80, 107, 1);
 $light: rgba(91, 192, 190, 1);
 $lightest: rgba(111, 255, 233, 1);
 
-@keyframes App-logo-spin {
+body {
+  background-color: $light;
+}
+
+a {
+  color: $darkest;
+  transition: all .3s;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $light;
+  }
+}
+
+nav {
+  position: relative;
+  width: 100vw;
+  background-color: $lightest;
+  display: flex;
+  ul {
+    margin: 0 auto;
+    max-width: 1000px;
+    list-style: none;
+    width: calc(100% - 150px);
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: text-bottom;
+    li {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+  .img-wrap {
+    display: inline-block;
+    padding: 20px;
+    img {
+      animation: logo-spin infinite 22s linear;
+      height: 80px;
+      max-width: 100%;
+    }
+  }
+  border-bottom: solid 1px $darkest;
+}
+
+@keyframes logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
