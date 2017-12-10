@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Footer from './Footer';
+import About from './About';
 
 import './jademade.min.css';
 
 
 
 class JadeMade extends Component {
+
+  constructor() {
+    super();
+    this.state = {}
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <div className="wrapper">
-          <h1>
-            Welcome to JadeMade!
-          </h1>
-          <h2>
-            We make amazing custom cards for any occasion.
-          </h2>
-        </div>
+        <About />
+        <Footer />
       </div>
     );
   }

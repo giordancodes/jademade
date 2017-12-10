@@ -5,6 +5,8 @@ $light: rgb(91, 192, 190);
 $lightest: rgba(111, 255, 233, 1);
 $orange: #FF4242;
 $yellow: #FFCB11;
+$green: #00D819;
+$purple: #4900aa;
 $writ: 'Shadows Into Light', cursive;
 
 
@@ -41,11 +43,20 @@ a {
   }
 }
 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 95%;
+}
+
 nav {
   position: relative;
   width: 100vw;
   background-color: $lightest;
-  display: flex;
+  .wrapper {
+    display: flex;
+
+  }
   ul {
     margin: 0 auto;
     max-width: 1000px;
@@ -63,7 +74,7 @@ nav {
     }
   }
   .img-wrap {
-    display: inline-block;
+    // display: inline-block;
     padding: 5px;
     margin-top: 10px;
     margin-left: 10px;
@@ -75,11 +86,13 @@ nav {
   }
 }
 
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 95%;
-  
+footer {
+  background-color: $lightest;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @keyframes logo-spin {
