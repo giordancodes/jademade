@@ -55,18 +55,13 @@ nav {
   background-color: $lightest;
   .wrapper {
     display: flex;
-
+    justify-content: space-between;
   }
   ul {
-    margin: 0 auto;
-    max-width: 1000px;
     list-style: none;
-    width: calc(100% - 150px);
-    padding: 15px 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    vertical-align: text-bottom;
     li {
       display: inline-block;
       padding: 5px 10px;
@@ -93,6 +88,23 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social {
+    a {
+      padding-right: 12px;
+    }
+    .fa {
+      font-size: 20px;
+      vertical-align: middle;
+      &.fa-etsy {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @keyframes logo-spin {

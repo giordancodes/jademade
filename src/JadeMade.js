@@ -18,7 +18,9 @@ class JadeMade extends Component {
     return (
       <div>
         <Header />
-        <About />
+        <div className="body-content">
+          <About />
+        </div>
         <Footer />
       </div>
     );

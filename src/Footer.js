@@ -7,16 +7,16 @@ class Footer extends Component {
       <footer>
         <div className="wrapper">
           <div className="social">
-            <a href="">
+            <a href="" title="Visit us on Etsy">
               <i className="fa fa-etsy"></i>
             </a>
-            <a href="">
+            <a href="" title="Visit us on Facebook">
               <i className="fa fa-facebook-square"></i>
             </a>
-            <a href="">
+            <a href="" title="Visit us on Pinterest">
               <i className="fa fa-pinterest-square"></i>
             </a>
-            <a href="">
+            <a href="" title="Visit us on Instagram">
               <i className="fa fa-instagram"></i>
             </a>
           </div>
