@@ -7,7 +7,6 @@ $orange: #FF4242;
 $yellow: #FFCB11;
 $green: #00D819;
 $purple: #4900aa;
-$writ: 'Shadows Into Light', cursive;
 
 @font-face {
   font-family: 'WorldFamous';
@@ -36,6 +35,7 @@ h2 {
   margin-top: 0;
   font-weight: 300;
   font-size: 1.5em;
+  margin-bottom: 40px;
 }
 
 a {
@@ -46,6 +46,10 @@ a {
   &:focus {
     color: $orange;
   }
+}
+
+.body-content {
+  padding-bottom: 40px;
 }
 
 .wrapper {
@@ -74,7 +78,6 @@ nav {
     }
   }
   .img-wrap {
-    // display: inline-block;
     padding: 5px;
     margin-top: 10px;
     margin-left: 10px;
@@ -88,9 +91,16 @@ nav {
 
 .about {
   .section {
+    .img-wrap {
+      text-align: center;
+    }
     &:nth-child(2) {
+      padding: 30px 0 10px;
       background-color: $light;
     }
+  }
+  .slow-grow {
+    animation: slow-grow infinite 7.5s ease-in-out;
   }
 }
 
@@ -121,7 +131,25 @@ footer {
 }
 
 @keyframes logo-spin {
-  0% { transform: rotate(-20deg); }
-  50% { transform: rotate(30deg); }
-  100% { transform: rotate(-20deg); }
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes slow-grow {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.05)
+  }
+  100% {
+    transform: scale(1)
+  }
 }

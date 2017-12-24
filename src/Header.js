@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Logo from './handpuppet.svg';
+import Logo from './img/handpuppet.svg';
 
 class Header extends Component {
   render() {
@@ -12,6 +12,7 @@ class Header extends Component {
           </span>
           <ul>
             <li><a href="">About Us</a></li>
+            <li><a href="">Pricing</a></li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Buy Now</a></li>
             <li><a href="">Contact</a></li>
