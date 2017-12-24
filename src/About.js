@@ -26,6 +26,15 @@ class About extends Component {
             </p>
           </div>
         </div>
+        <div className="section">
+          <div className="wrapper">
+            <h2 className="link">
+              <a href="">
+                Get in touch!
+              </a>
+            </h2>
+          </div>
+        </div>
       </div>
     );
   }
