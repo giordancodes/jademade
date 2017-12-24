@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'WorldFamous';
+  src: url("/worldfamous.woff2");
+}
+
 body {
   background-color: #3a506b;
   font-family: 'Lato', sans-serif;
@@ -6,11 +11,11 @@ body {
 
 h1 {
   color: #6fffe9;
-  font-size: 4em;
-  padding: 30px 0;
+  font-size: 5em;
+  padding: 40px 0;
   font-weight: 100;
   margin: 0;
-  font-family: "Shadows Into Light", cursive;
+  font-family: WorldFamous, sans-serif;
   text-align: center;
 }
 
@@ -19,6 +24,7 @@ h2 {
   color: #FFCB11;
   margin-top: 0;
   font-weight: 300;
+  font-size: 1.5em;
 }
 
 a {
@@ -32,7 +38,7 @@ a:hover, a:focus {
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 95%;
 }
@@ -71,6 +77,10 @@ nav .img-wrap img {
   animation: logo-spin infinite 5s ease-in-out;
   height: 60px;
   max-width: 100%;
+}
+
+.about .section:nth-child(2) {
+  background-color: #5bc0be;
 }
 
 footer {
