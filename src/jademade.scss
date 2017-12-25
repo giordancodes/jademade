@@ -7,13 +7,19 @@ $orange: #FF4242;
 $yellow: #FFCB11;
 $green: #00D819;
 $purple: #4900aa;
+$color1: rgba(0, 107, 166, 1);
+$color2: rgba(4, 150, 255, 1);
+$color3: rgba(255, 188, 66, 1);
+$color4: rgba(216, 17, 89, 1);
+$color5: rgba(143, 45, 86, 1);
+
 @font-face {
   font-family: 'WorldFamous';
   src: url('/worldfamous.woff2');
 }
 
 body {
-  background-color: $dark;
+  background-color: $color1;
   font-family: 'Lato', sans-serif;
   color: $darkest;
 }
@@ -37,12 +43,12 @@ h2 {
 }
 
 a {
-  color: $darkest;
+  color: $color3;
   transition: all .3s;
   text-decoration: none;
   &:hover,
   &:focus {
-    color: $orange;
+    color: $color1;
   }
 }
 
@@ -59,7 +65,7 @@ a {
 nav {
   position: relative;
   width: 100vw;
-  background-color: $lightest;
+  background-color: $color5;
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -94,7 +100,7 @@ nav {
     }
     &:nth-child(2) {
       padding: 30px 0 10px;
-      background-color: $light;
+      background-color: $color3;
     }
     .link {
       margin-top: 40px;
@@ -102,7 +108,7 @@ nav {
         color: white;
         &:focus,
         &:hover {
-          color: $orange;
+          color: $color4;
         }
       }
     }
@@ -113,7 +119,7 @@ nav {
 }
 
 footer {
-  background-color: $lightest;
+  background-color: $color5;
   padding: 10px 0;
   position: fixed;
   bottom: 0;
@@ -129,10 +135,10 @@ footer {
       padding-right: 12px;
     }
     .fa {
-      font-size: 20px;
+      font-size: 30px;
       vertical-align: middle;
       &.fa-etsy {
-        font-size: 16px;
+        font-size: 24px;
       }
     }
   }
@@ -140,13 +146,13 @@ footer {
 
 @keyframes logo-spin {
   0% {
-    transform: rotate(-20deg);
+    transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(30deg);
-  }
+  // 50% {
+  //   transform: rotate(30deg);
+  // }
   100% {
-    transform: rotate(-20deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -155,7 +161,7 @@ footer {
     transform: scale(1)
   }
   50% {
-    transform: scale(1.05)
+    transform: scale(1.15)
   }
   100% {
     transform: scale(1)
